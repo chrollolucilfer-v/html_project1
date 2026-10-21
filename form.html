@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+
+    <style>
+           * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+     
+
+        body {
+            font-family: Arial, sans-serif;
+            color: black;
+            background: white;
+        }
+
+        nav {
+            background: black;
+            color: white;
+            padding: 15px;
+        }
+
+        h2 {
+            padding-left: 10px;
+        }
+
+        .form {
+            width: 80%;
+            max-width: 400px;
+            margin: 30px auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        h1 span {
+            color: #ff9500;
+        }
+
+
+        label {
+            display: block;
+            margin-top: 15px;
+            
+            margin-bottom: 5px;
+        }
+
+     input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ff9500;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>Contact Form</h2>
+    </nav>
+
+    <div class="form">
+
+        <h1>Enter Your <span>Details</span></h1>
+
+        <form>
+
+
+            <label for="name">Name:</label><input type="text" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+          
+            <input type="email" 
+                   
+            placeholder="Enter your email" required>
+
+            <label for="age">Age:</label>
+              <input type="number"
+
+        placeholder="Enter your age" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" 
+
+                      placeholder="Enter your message" rows="3"></textarea>
+
+            <center>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                <button type="button"><a  href="home.html" target="home">Go Back</a>
+</button>
+                
+            </center>
+        </form>
+
+    </div>
+
+</body>
+</html>
